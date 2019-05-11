@@ -10,6 +10,7 @@
 #include "Utilities.h"
 #include "LineManager.h"
 #include "AssemblyLine.h"
+#include "CustomerOrder.h"
 
 namespace sict {
 	// index for manual validation
@@ -62,7 +63,7 @@ namespace sict {
 		std::string record;
 		while (!file.eof()) {
 			std::getline(file, record);
-			orders.push_back(std::move(CustomerOrder(record)));
+			orders.push_back(std::move (CustomerOrder(record)));
 		}
 		file.close();
 		os << "\nCustomer Orders\n";

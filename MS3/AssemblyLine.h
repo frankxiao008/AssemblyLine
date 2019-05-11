@@ -12,6 +12,8 @@
 #include "CustomerOrder.h"
 
 namespace sict {
+	
+
 	class AssemblyLine {
 		std::vector<ItemSet> inventory;
 		std::vector<CustomerOrder>orders;
